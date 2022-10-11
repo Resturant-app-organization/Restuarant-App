@@ -1,9 +1,10 @@
 import React from "react";
+import {Link } from "react-router-dom";
 
 export default function Foodlist({burgerTitle, burgerUrl, id}){
 
     return(
-        <div>
+        <div className="col m-2">
             <div className='card' style={{width : 25 + 'rem'}} > 
             <img src={burgerUrl} className="card-img-top" alt={burgerTitle}
             />
