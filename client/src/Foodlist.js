@@ -9,7 +9,7 @@ export default function Foodlist({burgerTitle, burgerUrl, id}){
             />
             <div className='card-body'>
             <h5 className="card-title" >{burgerTitle}</h5>
-                {/* <Link to={"/game/"+ id} className="btn btn-info">Game Description</Link> */}
+                <Link to={"/game/"+ id} className="btn btn-info">Burger Description</Link>
             </div>
         </div>
         </div>
