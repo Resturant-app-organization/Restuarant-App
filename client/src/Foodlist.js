@@ -1,17 +1,31 @@
-import React from "react";
-import {Link } from "react-router-dom";
+import React, { useEffect, useState }  from "react";
+export default function Foodlist(){
 
-export default function Foodlist({burgerTitle, burgerUrl, id}){
+    const [burgers, setGames] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:5000/burgers")
+        .then(response => response.json())
+        .then((burgers) => {
+            setGames(burgers)
+        })
+      }, [])
 
     return(
         <div className="col m-2">
             <div className='card' style={{width : 25 + 'rem'}} > 
-            <img src={burgerUrl} className="card-img-top" alt={burgerTitle}
-            />
-            <div className='card-body'>
-            <h5 className="card-title" >{burgerTitle}</h5>
-                <Link to={"/game/"+ id} className="btn btn-info">Burger Description</Link>
-            </div>
+            <h2>Burger list</h2>
+            {
+                burgers.map((burger) =>
+                <ol key = {burger.id}>
+                  <img src={burger.image_url} className="card-img-top" alt={burger.nam}/>
+                  <div className="card-body">
+                  <h3>{burger.name}</h3>
+                  < div className="btn btn-info">Burger Description</div>
+                  </div>
+                </ol>
+                )
+            }
         </div>
         </div>
     )
