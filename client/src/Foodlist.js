@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Foodlist(){
+export default function Foodlist({burgerTitle, burgerUrl, id}){
 
     return(
         <div>
