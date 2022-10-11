@@ -1,0 +1,2 @@
+class Cjrestaurant < ApplicationRecord
+end

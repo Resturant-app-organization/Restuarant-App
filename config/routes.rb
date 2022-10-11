@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :cjrestaurants
   resources :burgers
   resources :reviews
   resources :customers
