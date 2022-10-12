@@ -13,7 +13,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
 
     def update
         review = Review.find_by!(id: params[:id])
-        review.update
+        review.update(description: params[:description])
         render json: review, status: :accepted
     end 
 
