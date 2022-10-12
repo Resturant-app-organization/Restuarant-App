@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :cjrestaurants
-  resources :burgers
-  resources :reviews
+  resources :cjrestaurants, only: [:index]
+  resources :burgers, only: [:index, :show]
+  resources :reviews, only: [:show, :create, :update, :destroy]
   resources :customers
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
