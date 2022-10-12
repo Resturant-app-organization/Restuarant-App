@@ -22,6 +22,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
         review.destroy 
         render json: {}, status: :no_content
     end 
+    
 
     private
     def not_found_response
