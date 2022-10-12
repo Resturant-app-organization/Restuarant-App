@@ -1,12 +1,8 @@
-import React from 'react';
 // import Navbar from './Navbar';
 // import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 // import Burgers from './Burgers';
 // import BurgerDescription from './Details';
 
-function App() {
-  return (
-    <div></div>
     // <Router>
     //    <div className="App">
     // <Navbar />
