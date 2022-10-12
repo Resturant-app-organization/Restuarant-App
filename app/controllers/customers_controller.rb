@@ -14,7 +14,7 @@ class CustomersController < ApplicationController
     private
 
     def customer_params
-        params.permit(:username, :password, :password_confirmation, :image_url)
+        params.permit(:username, :password, :password_confirmation)
     end
-    
+
 end
