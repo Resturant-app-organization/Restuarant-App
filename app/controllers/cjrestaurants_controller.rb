@@ -1,0 +1,2 @@
+class CjrestaurantsController < ApplicationController
+end
