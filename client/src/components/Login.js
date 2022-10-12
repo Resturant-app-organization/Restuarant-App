@@ -9,7 +9,6 @@ const Login = ({ onLogin }) => {
  return (
    
     <wrapper>
-      {/* <Logo>Reciplease</Logo> */}
       {showLogin ? (
      
      <div className="create">
