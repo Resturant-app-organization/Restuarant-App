@@ -24,9 +24,14 @@
         "image_url": "https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHN0dWZmZWQlMjBiZWFuJTIwJTIwYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "price": 1700
       },
-      
       {
         "id": 6,
+        "name": "Double burger",
+        "image_url": "https://images.unsplash.com/photo-1574783756547-258b3c720fe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG11c2hyb29tJTIwJTIwYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "price": 1550
+      },
+      {
+        "id": 7,
         "name": "Double burger",
         "image_url": "https://images.unsplash.com/photo-1574783756547-258b3c720fe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fG11c2hyb29tJTIwJTIwYnVyZ2VyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "price": 1550
