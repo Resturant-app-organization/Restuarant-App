@@ -7,7 +7,7 @@ rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
     end 
 
     def create
-        review = Review.create 
+        review = Review.create!(review_params) 
         render json: review, Serializer: CustomerWithReviewSerializer, status: :created
     end
 
@@ -26,6 +26,10 @@ rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
     private
     def not_found_response
         render json: {error: "Review not found"} 
+    end
+
+    def review_params
+        params.permit (:customer_id, :burger_id, :description) 
     end
 
 end
