@@ -1,6 +1,9 @@
 class SessionsController < ApplicationController
+
+
     rescue_from ActiveRecord::RecordNotFound, with: :not_found_response
     rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity_response
+
     # skip_before_action :authorize, only: :create
 
     # def create
