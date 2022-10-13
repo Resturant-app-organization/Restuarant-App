@@ -29,42 +29,24 @@ export default function Navbar() {
                 style={{ color: "purple" }}
               > s</Link>
               </li>
-              {/* <li>
-               <Link
-                className="nav-link d-flex justify-content-center"
-                to="/menu"
-                style={{ color: "purple" }}
-              >
-              Menu
-              </Link> 
-            </li> */}
-            {/* <li className="nav-item">
+              <li className="nav-item">
               <Link
                 className="nav-link d-flex justify-content-center"
-                to="/about"
+                to="/"
                 style={{ color: "purple" }}
               >
-             About
+              FoodList
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 className="nav-link d-flex justify-content-center"
-                to="/contacts"
+                to="/review"
                 style={{ color: "purple" }}
               >
-             Contacts
+             Review
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link d-flex justify-content-center"
-                to="/logout"
-                style={{ color: "purple" }}
-              >
-             Logout
-              </Link>
-            </li> */}
           </ul>
         </div>
       </div>
