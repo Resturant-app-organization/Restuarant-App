@@ -95,59 +95,69 @@ Cjrestaurant.create(
 puts "Seeding Customers..."
 Customer.create(
     username: "John",
+    password:"hello",
+    password_confirmation:"hello",
     phone_number: 733-333-5555,
     gender: "Male"
 )
-Customer.create(
-    username: "Mary",
-    phone_number: 433-333-1111,
-    gender: "Female"
-)
-Customer.create(
-    username: "Eliza",
-    phone_number: 303-663-8855,
-    gender: "Female"
-)
-Customer.create(
-    username: "Martin",
-    phone_number: 343-333-3333,
-    gender: "Male"
-)
-Customer.create(
-    username: "Sue",
-    phone_number: 233-333-3333,
-    gender: "Female"
-)
-Customer.create(
-    username: "Paul",
-    phone_number: 003-763-4444,
-    gender: "Male"
-)
-Customer.create(
-    username: "Mwashumbe",
-    phone_number: 233-883-1133,
-    gender: "Female"
-)
-Customer.create(
-    username: "Festus",
-    phone_number: 903-333-2433,
-    gender: "Male"
-)
-Customer.create(
-    username: "Peter",
-    phone_number: 113-333-3333,
-    gender: "Male"
-)
-Customer.create(
-    username: "James",
-    phone_number: 325-543-3213,
-    gender: "Male"
-)
-Customer.create(
-    username: "Martha",
-    phone_number: 333-432-3333,
-    gender: "Female"
-)
+# Customer.create(
+#     username: "Mary",
+#     password_digest:"",
+#     phone_number: 433-333-1111,
+#     gender: "Female"
+# )
+# Customer.create(
+#     username: "Eliza",
+#     password_digest:"",
+#     phone_number: 303-663-8855,
+#     gender: "Female"
+# )
+# Customer.create(
+#     username: "Martin",
+#     phone_number: 343-333-3333,
+#     gender: "Male"
+# )
+# Customer.create(
+#     username: "Sue",
+#     password_digest:"",
+#     phone_number: 233-333-3333,
+#     gender: "Female"
+# )
+# Customer.create(
+#     username: "Paul",
+#     phone_number: 003-763-4444,
+#     gender: "Male"
+# )
+# Customer.create(
+#     username: "Mwashumbe",
+#     password_digest:"",
+#     phone_number: 233-883-1133,
+#     gender: "Female"
+# )
+# Customer.create(
+#     username: "Festus",
+#     password_digest:"",
+#     phone_number: 903-333-2433,
+#     gender: "Male"
+# )
+# Customer.create(
+#     username: "Peter",
+#     password_digest:"",
+#     phone_number: 113-333-3333,
+#     gender: "Male"
+# )
+# Customer.create(
+#     username: "James",
+#     password_digest:"",
+#     phone_number: 325-543-3213,
+#     gender: "Male"
+# )
+# Customer.create(
+#     username: "Martha",
+#     password_digest:"",
+#     phone_number: 333-432-3333,
+#     gender: "Female"
+# )
 
 
 puts "Seeding Review..."
