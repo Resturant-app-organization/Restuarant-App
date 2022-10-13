@@ -36,12 +36,6 @@ export default function Navbar({ user, setUser }) {
                 style={{ color: "purple" }}
               > s</Link>
               </li>
-
-              <li className="nav-item">
-
-              <li>
-               
-            </li>
               {/* <li>
                <Link
                 className="nav-link d-flex justify-content-center"

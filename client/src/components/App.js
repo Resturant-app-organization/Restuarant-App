@@ -6,7 +6,7 @@ import Menu from "./Menu";
 import About from "./About";
 import Contacts from "./Contacts";
 import Login from "./Login";
-import Home from "./FoodList";
+import FoodList from "./FoodList";
 import BurgerDetails from "./BurgerDetails";
 import Review from "./Review"
 import Logout from "./Logout";
@@ -44,7 +44,7 @@ function App({ onLogin, reviews, setReviewList }) {
       </div>
       <div className="row mt-3">
         <Routes>
-        <Route exact path="/" element={<Home burgerList={burgerList} setBurgerList={setBurgerList} />}
+        <Route exact path="/" element={<FoodList burgerList={burgerList} setBurgerList={setBurgerList} />}
           ></Route>
         <Route exact path="/login" element={<Login/>}></Route>
           <Route exact path="/menu" element={<Menu />}></Route>
