@@ -6,7 +6,7 @@ export default function Review(){
     const [reviews, setReviewList] = useState([]);
 
     const MyReviews = () => {
-      fetch("http://localhost:8000/reviews")
+      fetch("http://localhost:3000/reviews")
         .then((response) => response.json())
         .then((reviews) => {
       
@@ -17,7 +17,7 @@ export default function Review(){
     useEffect(MyReviews, []);
 
     function handleDelete(id) {
-        fetch(`http://localhost:8000/reviews/${id}`, {
+        fetch(`http://localhost:3000/reviews/${id}`, {
           method: "DELETE",
         })
           .then((r) => r.json())
