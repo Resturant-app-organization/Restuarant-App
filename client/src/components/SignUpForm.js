@@ -11,7 +11,7 @@ const SignUpForm = ({ onLogin }) => {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/signup", {
+    fetch("http://127.0.0.1:3000/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -25,9 +25,11 @@ const SignUpForm = ({ onLogin }) => {
     }).then((r) => {
       setIsLoading(false);
       if (r.ok) {
-        r.json().then((user) => onLogin(user));
+        r.json().then((customer) => onLogin(customer));
       } else {
+        console.log(r)
         r.json().then((err) => setErrors(err.errors));
+      
       }
     });
   }
@@ -69,9 +71,9 @@ const SignUpForm = ({ onLogin }) => {
         />
         <button type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
       
-        {errors.map((err) => (
+        {/* {errors.map((err) => (
           <error key={err}>{err}</error>
-        ))}
+        ))} */}
       
     </form>
     </div>

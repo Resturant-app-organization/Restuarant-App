@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
 
  return (
    
-    <wrapper>
+    <>
       {showLogin ? (
      
      <div className="create">
@@ -37,7 +37,7 @@ const Login = ({ onLogin }) => {
           
         </>
       )}
-    </wrapper>
+    </>
     
   );
 }

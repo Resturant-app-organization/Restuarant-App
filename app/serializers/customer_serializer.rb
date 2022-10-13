@@ -1,5 +1,6 @@
 class CustomerSerializer < ActiveModel::Serializer
-  attributes :id, :username, :phone_number, :gender
+ 
+  attributes :id, :username
 
   # has_many :reviews
 end

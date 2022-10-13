@@ -1,4 +1,5 @@
 class Customer < ApplicationRecord
+    has_secure_password
     has_many :burgers
     has_many :reviews 
     
