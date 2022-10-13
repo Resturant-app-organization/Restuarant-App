@@ -2,8 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-function BurgerCard({burgerId, image_url, burgerName}) {
+function BurgerCard({burgerId, image_url, burgerName,burgerList,onDetailsClick}) {
 
+  function handleOnClick(){
+    onDetailsClick(burgerList)
+
+}
+    
   return (
     <div className="col">
       <div className="card h-100 create" style={{ width: 18 + "rem" }}>
@@ -11,10 +16,11 @@ function BurgerCard({burgerId, image_url, burgerName}) {
         <div className="card-body">
           <h5 className="card-title">{burgerName}</h5>
           
-          <Link to={"/burgers/" + burgerId} className="btn btn-primary">
+          <Link to={"/burgers/" + burgerId}onClick={handleOnClick} className="btn btn-primary">
             Burger Details
           </Link>
         </div>
+       
       </div>
      
     </div>
