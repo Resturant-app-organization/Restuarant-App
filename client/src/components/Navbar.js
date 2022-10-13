@@ -42,7 +42,7 @@ export default function Navbar({ customer, setCustomer }) {
 
               <li className="nav-item">
 
-              <li>
+              
                
             </li>
               {/* <li>
