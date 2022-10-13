@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ user, setUser }) {
+  function handleLogoutClick() {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
+      if (r.ok) {
+        setUser(null);
+      }
+    });
+  }
   return (
     <nav className="navbar navbar-expand-sm  navbar-expand-lg light">
       
@@ -29,7 +36,23 @@ export default function Navbar() {
                 style={{ color: "purple" }}
               > s</Link>
               </li>
+
               <li className="nav-item">
+
+              <li>
+               
+            </li>
+              {/* <li>
+               <Link
+                className="nav-link d-flex justify-content-center"
+                to="/menu"
+                style={{ color: "purple" }}
+              >
+              Menu
+              </Link> 
+            </li> */}
+            {/* <li className="nav-item">
+
               <Link
                 className="nav-link d-flex justify-content-center"
                 to="/"
@@ -47,6 +70,12 @@ export default function Navbar() {
              Review
               </Link>
             </li>
+
+
+            <button variant="outline" onClick={handleLogoutClick}>
+          Logout
+        </button> */}
+
           </ul>
         </div>
       </div>
