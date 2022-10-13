@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar({ user, setUser }) {
+export default function Navbar({ customer, setCustomer }) {
   function handleLogoutClick() {
-    fetch("/logout", { method: "DELETE" }).then((r) => {
+    fetch("http://127.0.0.1:3000/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
-        setUser(null);
+        setCustomer(null);
       }
     });
   }
@@ -28,13 +28,16 @@ export default function Navbar({ user, setUser }) {
           class="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
+          <button variant="outline" onClick={handleLogoutClick}>
+          Logout
+        </button>
           <ul className="navbar-nav">
             <li className="nav-item">
             <Link
                 className="nav-link d-flex justify-content-center"
-                to="/login"
+                to="/foodlist"
                 style={{ color: "purple" }}
-              > s</Link>
+              > Foodlist</Link>
               </li>
               {/* <li>
                <Link
