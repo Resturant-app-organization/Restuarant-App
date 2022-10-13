@@ -1,7 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Navbar({ user, setUser }) {
+  function handleLogoutClick() {
+    fetch("/logout", { method: "DELETE" }).then((r) => {
+      if (r.ok) {
+        setUser(null);
+      }
+    });
+  }
   return (
     <nav className="navbar navbar-expand-sm  navbar-expand-lg light">
       
@@ -29,6 +36,9 @@ export default function Navbar() {
                 style={{ color: "purple" }}
               > s</Link>
               </li>
+              <li>
+               
+            </li>
               {/* <li>
                <Link
                 className="nav-link d-flex justify-content-center"
@@ -56,15 +66,9 @@ export default function Navbar() {
              Contacts
               </Link>
             </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link d-flex justify-content-center"
-                to="/logout"
-                style={{ color: "purple" }}
-              >
-             Logout
-              </Link>
-            </li> */}
+            <button variant="outline" onClick={handleLogoutClick}>
+          Logout
+        </button> */}
           </ul>
         </div>
       </div>
