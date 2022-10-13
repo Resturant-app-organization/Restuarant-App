@@ -36,6 +36,9 @@ export default function Navbar({ user, setUser }) {
                 style={{ color: "purple" }}
               > s</Link>
               </li>
+
+              <li className="nav-item">
+
               <li>
                
             </li>
@@ -49,26 +52,30 @@ export default function Navbar({ user, setUser }) {
               </Link> 
             </li> */}
             {/* <li className="nav-item">
+
               <Link
                 className="nav-link d-flex justify-content-center"
-                to="/about"
+                to="/"
                 style={{ color: "purple" }}
               >
-             About
+              FoodList
               </Link>
             </li>
             <li className="nav-item">
               <Link
                 className="nav-link d-flex justify-content-center"
-                to="/contacts"
+                to="/review"
                 style={{ color: "purple" }}
               >
-             Contacts
+             Review
               </Link>
             </li>
+
+
             <button variant="outline" onClick={handleLogoutClick}>
           Logout
         </button> */}
+
           </ul>
         </div>
       </div>
