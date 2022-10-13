@@ -15,10 +15,9 @@ import Review from "./Review"
 import Logout from "./Logout";
 
 import Footer from "./Footer";
-import Foodlist from "./Foodlist";
 
 function App({ onLogin, reviews, setReviewList }) {
-  const [user, setUser] = useState(null);
+  const [customer, setCustomer] = useState(null);
 
   const [burgerList, setBurgerList] = useState([]);
 
