@@ -39,12 +39,6 @@ export default function Navbar({ customer, setCustomer }) {
                 style={{ color: "purple" }}
               > Foodlist</Link>
               </li>
-
-              <li className="nav-item">
-
-              
-               
-            </li>
               {/* <li>
                <Link
                 className="nav-link d-flex justify-content-center"

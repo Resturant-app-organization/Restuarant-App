@@ -27,7 +27,7 @@ const AddReview= ({customer_id, description, burger_id,handleReview}) => {
             burger_id: newBurger_id
         };
 
-        fetch('http://localhost:8000/reviews', {
+        fetch('http://localhost:3000/reviews', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(NewReview)
