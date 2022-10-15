@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -15,22 +14,14 @@ import Review from "./Review"
 import Logout from "./Logout";
 
 import Footer from "./Footer";
+import FoodList from "./FoodList";
 
 function App({ onLogin, reviews, setReviewList }) {
   const [customer, setCustomer] = useState(null);
 
-  const [burgerList, setBurgerList] = useState([]);
-
-  const POSTS = () => {
-    fetch("http://localhost:8000/burgers")
-      .then((response) => response.json())
-      .then((burgers) => {
-    
-        setBurgerList(burgers);
-      });
-  };
-
-  useEffect(POSTS, []);
+function onDetailsClick(clickedBurger){
+    setBurgerList(clickedBurger)
+  }
 
   useEffect(() => {
     fetch("/me").then((r) => {

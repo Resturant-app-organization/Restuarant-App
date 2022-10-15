@@ -13,7 +13,7 @@ export default function BurgerDetails(){
   
 
     const ViewBurger = () => {
-        fetch(`http://localhost:8000/burgers/${burgerId}`)
+        fetch(`http://localhost:3000/burgers/${burgerId}`)
          .then((response) => response.json())
             .then((burgers) => { console.log(burgers)
 
