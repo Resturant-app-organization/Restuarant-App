@@ -1,30 +1,32 @@
 import React,{ useState} from 'react';
 
 
-const AddReview= ({customer_id, description, burger_id,handleReview}) => {
+const AddReview= ({customer_id, burger_id, description, handleReview}) => {
    
-    const [newCustomer_id, setNewCustomer_id] = useState("");
     const [newDescription, setNewDescription] = useState("");
-    const [newBurger_id, setNewBurger_id] = useState("");
+    const [newBurgerId, setNewBurgerId] = useState("");
+    const [newCustomerId, setNewCustomerId] = useState("");
 
-    function handleNewTitle(event){
-        setNewCustomer_id(event.target.value)
+
+    function handleNewBurger(event){
+        setNewBurgerId(event.target.value)
+      }
+
+      function handleNewCustomer(event){
+        setNewCustomerId(event.target.value)
       }
 
       function handleNewDescription(event){
         setNewDescription(event.target.value)
       }
 
-      function handleNewPostDate(event){
-        setNewBurger_id(event.target.value)
-      }
 
     const handleSubmit = (e) => {
         e.preventDefault();
         const NewReview = { 
-            customer_id:newCustomer_id,
             description :newDescription,
-            burger_id: newBurger_id
+            customer_id :newCustomerId,
+            burger_id :newBurgerId
         };
 
         fetch('http://localhost:3000/reviews', {
@@ -41,14 +43,21 @@ const AddReview= ({customer_id, description, burger_id,handleReview}) => {
         <div className="create"><br></br>
             <h2>Add a Review</h2>
             <form onSubmit={handleSubmit}>
-                <label>Burger</label>
-                    <input
-                        className="form-control"
-                        type="text"
-                         name="title"
-                        value={customer_id}
-                        onChange={handleNewTitle}
-                        placeholder="Enter burger title here..."/>
+            <label>Customer</label>
+                <input 
+                    type="integer"
+                    required
+                    value={customer_id}
+                    onChange={handleNewCustomer}
+                    placeholder="Enter customer id..."/>
+
+            <label>Burger</label>
+                <input 
+                    type="integer"
+                    required
+                    value={burger_id}
+                    onChange={handleNewBurger}
+                    placeholder="Enter burger id..."/>
                 
                 <label>Review</label>
                 <input 
@@ -57,14 +66,6 @@ const AddReview= ({customer_id, description, burger_id,handleReview}) => {
                     value={description}
                     onChange={handleNewDescription}
                     placeholder="drop a comment to review our burger..."/>
-               
-                <label>post Date</label>
-                <input 
-                    type="date"
-                    required
-                    value={burger_id}
-                    onChange={handleNewPostDate}
-                    placeholder="Enter postDate here..."/>
                
                 {<button>Post Review</button>}
             </form>
