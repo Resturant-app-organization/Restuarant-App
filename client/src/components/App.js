@@ -11,13 +11,14 @@ import FoodList from "./FoodList";
 import Home from "./FoodList";
 import BurgerDetails from "./BurgerDetails";
 import Review from "./Review"
-import Logout from "./Logout";
+// import Logout from "./Logout";
 
 import Footer from "./Footer";
-import FoodList from "./FoodList";
+// import FoodList from "./FoodList";
 
 function App({ onLogin, reviews, setReviewList }) {
   const [customer, setCustomer] = useState(null);
+  const [burgerList, setBurgerList] = useState([])
 
 function onDetailsClick(clickedBurger){
     setBurgerList(clickedBurger)
@@ -42,12 +43,12 @@ function onDetailsClick(clickedBurger){
         ></Route>
         <Route exact path="/" element={<Home burgerList={burgerList} setBurgerList={setBurgerList} />}
           ></Route>
-r
+
         <Route exact path="/login" element={<Login/>}></Route>
           <Route exact path="/menu" element={<Menu />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contacts" element={<Contacts />}></Route>
-          <Route exact path="/logout" element={<Logout />}></Route>
+          {/* <Route exact path="/logout" element={<Logout />}></Route> */}
           <Route exact path="/burgers/:burgerId" element={<BurgerDetails />}
           ></Route>
            <Route  exact  path="/review"  element={<Review reviewList={reviews} setReviewList={setReviewList} />}
