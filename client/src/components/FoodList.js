@@ -29,6 +29,7 @@ function FoodList({  onDetailsClick }) {
       <BurgerCard
         image_url={burger.image_url}
         burgerName={burger.name}
+        burgerPrice={burger.price}
         onDetailsClick={onDetailsClick}
         burgerId={burger.id}
         key={burger.id}

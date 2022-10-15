@@ -16,9 +16,10 @@ import Review from "./Review"
 import Footer from "./Footer";
 // import FoodList from "./FoodList";
 
-function App({ onLogin, reviews, setReviewList }) {
+function App({reviews, setReviewList}) {
+  const [burgerList, setBurgerList] = useState(null);
   const [customer, setCustomer] = useState(null);
-  const [burgerList, setBurgerList] = useState([])
+  // const [burgerList, setBurgerList] = useState([])
 
 function onDetailsClick(clickedBurger){
     setBurgerList(clickedBurger)
@@ -46,6 +47,7 @@ function onDetailsClick(clickedBurger){
 
         <Route exact path="/login" element={<Login/>}></Route>
           <Route exact path="/menu" element={<Menu />}></Route>
+          <Route exact path="/burgers/:burgerId" element={<BurgerDetails />}></Route>
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/contacts" element={<Contacts />}></Route>
           {/* <Route exact path="/logout" element={<Logout />}></Route> */}

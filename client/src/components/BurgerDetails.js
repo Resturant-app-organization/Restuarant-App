@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import Review from "./Review";
+import Review from "./Review"
 
 
 export default function BurgerDetails(){
@@ -35,7 +35,7 @@ export default function BurgerDetails(){
             <center>
                 <img src={image} style={{height: 200 + 'px', width: 300 + 'px'}} alt={title} />
                 <h4>Burger Name:{title}</h4>
-                <h5>BUrger Price:{unit_price}</h5>
+                <h5>Burger Price:{unit_price}</h5>
                 <Review />
             </center> 
         </div>
