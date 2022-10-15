@@ -17,7 +17,7 @@ import Footer from "./Footer";
 import FoodList from "./FoodList";
 
 function App({ onLogin, reviews, setReviewList }) {
-  const [user, setUser] = useState(null);
+  const [customer, setCustomer] = useState(null);
 
 function onDetailsClick(clickedBurger){
     setBurgerList(clickedBurger)
