@@ -1,4 +1,6 @@
 class CustomerWithReviewSerializer < ActiveModel::Serializer
-  attributes :customer_id, :burger_id, :description
+  attributes :id
+
+  has_many :burgers
 
 end

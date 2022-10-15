@@ -2,53 +2,53 @@ puts "Preparing Burger!"
 Burger.create(
     name: "Cheese burger",
     price: 200,
-    image_url: "https://unsplash.com/photos/5nvt9BrLaAc"
+    image_url: "https://i.ndtvimg.com/i/2016-05/chicken-burger_625x350_61464591266.jpg"
 )
 Burger.create(
     name: "Chicken burger",
     price: 250,
-    image_url: "https://unsplash.com/photos/jh5XyK4Rr3Y"
+    image_url: "https://c.ndtvimg.com/o6fmnhs_burger_625x300_20_July_18.jpg"
 )
 Burger.create(
     name: "Fish burger",
     price: 400,
-    image_url: "https://unsplash.com/photos/NkwNp3ho-Qw"
+    image_url: "https://i.ndtvimg.com/i/2016-05/chicken-fish-burger_625x350_61464592753.jpg"
 )
 Burger.create(
     name: "Mushroom burger",
     price: 150,
-    image_url: "https://unsplash.com/photos/I7A_pHLcQK8"
+    image_url: "https://i.ndtvimg.com/i/2016-05/lentil-mushroom-burger_625x350_71464592318.jpg"
 )
 Burger.create(
     name: "Stuffed bean burger",
     price: 500,
-    image_url: "https://unsplash.com/photos/sc5sTPMrVfk"
+    image_url: "https://i.ndtvimg.com/i/2016-05/lentil-mushroom-burger_625x350_71464592318.jpg"
 )
 Burger.create(
     name: "Meat burger",
     price: 350,
-    image_url: "https://unsplash.com/photos/uBigm8w_MpA"
+    image_url: "https://i.ndtvimg.com/i/2016-05/lamb-burger_625x350_41464593235.jpg"
 )
 Burger.create(
     name: "Lamb burger",
     price: 400,
-    image_url: "https://unsplash.com/photos/ypZI_CA91M0"
+    image_url: "https://i.ndtvimg.com/i/2016-05/lamb-burger_625x350_41464593235.jpg"
 )
 Burger.create(
     name: "Potato burger",
     price: 200,
-    image_url: "https://unsplash.com/photos/I7A_pHLcQK8"
+    image_url: "https://i.ndtvimg.com/i/2016-05/potato-corn-burger_625x350_51464590875.jpg"
 )
-Burger.create(
-    name: "Veggie burger",
-    price: 270,
-    image_url: "https://unsplash.com/photos/_qxbJUr9RqI"
-)
-Burger.create(
-    name: "Pizza burger",
-    price: 180,
-    image_url: "https://unsplash.com/photos/X92WLoaQ1_o"
-)
+# Burger.create(
+#     name: "Veggie burger",
+#     price: 270,
+#     image_url: "https://i.ndtvimg.com/i/2016-05/supreme-veggie-burger_625x350_71464590935.jpg"
+# )
+# Burger.create(
+#     name: "Pizza burger",
+#     price: 180,
+#     image_url: "https://c.ndtvimg.com/2021-09/nr0qi0sg_pizza-burger_625x300_23_September_21.jpg"
+# )
 
 puts "Building Restaurant..."
 Cjrestaurant.create(
@@ -95,69 +95,69 @@ Cjrestaurant.create(
 puts "Seeding Customers..."
 Customer.create(
     username: "John",
-    password:"hello",
-    password_confirmation:"hello",
+    password:"",
+    password_confirmation:"",
     phone_number: 733-333-5555,
     gender: "Male"
 )
-# Customer.create(
-#     username: "Mary",
-#     password_digest:"",
-#     phone_number: 433-333-1111,
-#     gender: "Female"
-# )
-# Customer.create(
-#     username: "Eliza",
-#     password_digest:"",
-#     phone_number: 303-663-8855,
-#     gender: "Female"
-# )
-# Customer.create(
-#     username: "Martin",
-#     phone_number: 343-333-3333,
-#     gender: "Male"
-# )
-# Customer.create(
-#     username: "Sue",
-#     password_digest:"",
-#     phone_number: 233-333-3333,
-#     gender: "Female"
-# )
-# Customer.create(
-#     username: "Paul",
-#     phone_number: 003-763-4444,
-#     gender: "Male"
-# )
-# Customer.create(
-#     username: "Mwashumbe",
-#     password_digest:"",
-#     phone_number: 233-883-1133,
-#     gender: "Female"
-# )
-# Customer.create(
-#     username: "Festus",
-#     password_digest:"",
-#     phone_number: 903-333-2433,
-#     gender: "Male"
-# )
-# Customer.create(
-#     username: "Peter",
-#     password_digest:"",
-#     phone_number: 113-333-3333,
-#     gender: "Male"
-# )
-# Customer.create(
-#     username: "James",
-#     password_digest:"",
-#     phone_number: 325-543-3213,
-#     gender: "Male"
-# )
-# Customer.create(
-#     username: "Martha",
-#     password_digest:"",
-#     phone_number: 333-432-3333,
-#     gender: "Female"
-# )
+Customer.create(
+    username: "Mary",
+    password_digest:"",
+    phone_number: 433-333-1111,
+    gender: "Female"
+)
+Customer.create(
+    username: "Eliza",
+    password_digest:"",
+    phone_number: 303-663-8855,
+    gender: "Female"
+)
+Customer.create(
+    username: "Martin",
+    phone_number: 343-333-3333,
+    gender: "Male"
+)
+Customer.create(
+    username: "Sue",
+    password_digest:"",
+    phone_number: 233-333-3333,
+    gender: "Female"
+)
+Customer.create(
+    username: "Paul",
+    phone_number: 003-763-4444,
+    gender: "Male"
+)
+Customer.create(
+    username: "Mwashumbe",
+    password_digest:"",
+    phone_number: 233-883-1133,
+    gender: "Female"
+)
+Customer.create(
+    username: "Festus",
+    password_digest:"",
+    phone_number: 903-333-2433,
+    gender: "Male"
+)
+Customer.create(
+    username: "Peter",
+    password_digest:"",
+    phone_number: 113-333-3333,
+    gender: "Male"
+)
+Customer.create(
+    username: "James",
+    password_digest:"",
+    phone_number: 325-543-3213,
+    gender: "Male"
+)
+Customer.create(
+    username: "Martha",
+    password_digest:"",
+    phone_number: 333-432-3333,
+    gender: "Female"
+)
 
 
 puts "Seeding Review..."
