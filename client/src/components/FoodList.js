@@ -40,9 +40,9 @@ function FoodList({  onDetailsClick }) {
 
   return (
     <div className="container">
-      Search Burger.
-      <form >
-        <div>
+      <h3 className="s-burger">Search Burger</h3>
+      <form  className="s-btn">
+        <div className="search">
           <input
             type="text"
             className="form-control"

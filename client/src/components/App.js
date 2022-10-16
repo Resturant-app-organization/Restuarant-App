@@ -8,10 +8,8 @@ import Login from "./Login";
 import FoodList from "./FoodList";
 import BurgerDetails from "./BurgerDetails";
 import Review from "./Review"
-// import Logout from "./Logout";
 
 import Footer from "./Footer";
-// import FoodList from "./FoodList";
 
 function App({reviews, setReviewList}) {
   const [burgerList, setBurgerList] = useState(null);

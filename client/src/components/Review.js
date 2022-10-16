@@ -39,7 +39,7 @@ export default function Review(){
          {
                   reviews.map((review) => ( 
                       <ol key = { review.id } >
-                          Description: &nbsp;{review.description} <br></br>
+                          &nbsp;{review.description} <br></br>
                         
                           <button className="App-button" style={{backgroundColor: "red"}}onClick={(e) => (
                           handleDelete(review.id)

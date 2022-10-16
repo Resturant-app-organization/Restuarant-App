@@ -1,5 +1,4 @@
 class Burger < ApplicationRecord
-    # belongs_to :cjrestaurant 
-    has_many :customers 
-    has_many :reviews, through: :customers 
+    has_many :reviews
+    has_many :customers, through: :reviews
 end

@@ -93,3 +93,39 @@ body {
 .pstyle{
   color: rgb(253, 247, 247);
 }
+
+form.s-btn input[type=text] {
+  padding-right: 50px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 30%;
+  background: #f1f1f1;
+  margin: 30px;
+}
+
+form.s-btn button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.s-btn button:hover {
+  background: #0b7dda;
+}
+
+form.s-btn::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.s-burger{
+  margin: 30px;
+}

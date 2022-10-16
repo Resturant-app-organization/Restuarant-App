@@ -10,6 +10,7 @@ const SignUpForm = ({ onLogin }) => {
   function handleSubmit(e) {
     e.preventDefault();
     setErrors([]);
+
     setIsLoading(true);
     fetch("http://127.0.0.1:3000/signup", {
       method: "POST",
@@ -35,7 +36,7 @@ const SignUpForm = ({ onLogin }) => {
   }
 
   return (
-    <div className="about">
+    
       
       <div className="create">
         <h2>BOBO SAVOURS</h2>
@@ -77,7 +78,7 @@ const SignUpForm = ({ onLogin }) => {
       
     </form>
     </div>
-    </div>
+    
   );
 }
 

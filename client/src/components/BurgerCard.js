@@ -10,13 +10,13 @@ function BurgerCard({burgerId, image_url, burgerName,burgerList,onDetailsClick})
 }
     
   return (
-    <div className="col m-2">
+    <div className="col m-3">
       <div className="card h-100 create" style={{ width: 18 + "rem" }}>
         <img src={image_url} style={{ height: 200 + 'px', width: 286 + 'px' }} alt="" className="card-img-top" />
         <div className="card-body">
           <h5 className="card-title">{burgerName}</h5>
           
-          <Link to={"/burgers/" + burgerId}onClick={handleOnClick} className="btn btn-primary">
+          <Link to={"/burgers/" + burgerId}onClick={handleOnClick} className="btn btn-secondary">
             Burger Details
           </Link>
         </div>
