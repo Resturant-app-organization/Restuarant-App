@@ -161,6 +161,7 @@ Customer.create(
 
 
 puts "Seeding Review..."
+3.times do |index|
 Review.create(
     customer_id: 1,
     burger_id: 10,
@@ -211,5 +212,6 @@ Review.create(
     burger_id: 8,
     description: "The comfort of potato and the crunch of corn in one thick pattie. Topped off with lettuce, tomatoes, gherkins and served with hot chips."
 )
+end
 puts "Done seeding!"
 

@@ -71,9 +71,9 @@ const SignUpForm = ({ onLogin }) => {
         />
         <button type="submit">{isLoading ? "Loading..." : "Sign Up"}</button>
       
-        {/* {errors.map((err) => (
+        {errors.map((err) => (
           <error key={err}>{err}</error>
-        ))} */}
+        ))}
       
     </form>
     </div>
