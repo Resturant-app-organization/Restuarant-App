@@ -30,10 +30,10 @@ class CustomersController < ApplicationController
     # end
 
 
-    def show
-        customer = Customer.find_by!(id: params[:id])
-        render json: customer, status: :ok
-    end 
+    # def show
+    #     customer = Customer.find_by!(id: params[:id])
+    #     render json: customer, status: :ok
+    # end 
 
     def show
         user = Customer.find_by(id: session[:customer_id])
