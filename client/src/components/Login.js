@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
 
  return (
    
-  <>
+  <div className="about">
       {showLogin ? (
      
      <div className="create">
@@ -24,7 +24,7 @@ const Login = ({ onLogin }) => {
           
         </div>
       ) : (
-        <>
+        <div className="create">
        
           <SignUpForm onLogin={onLogin} />
          
@@ -35,10 +35,10 @@ const Login = ({ onLogin }) => {
             </button>
           </p>
           
-        </>
+        </div>
       )}
     
-    </>
+    </div>
   );
 }
 

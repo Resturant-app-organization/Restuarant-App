@@ -6,16 +6,21 @@ class CustomersController < ApplicationController
     #     session[:customer_id] = customer.id
     #     render json: customer, status: :created
     # end
+     def index
+        render json: Customer.all, status: :ok
+    end
+
     def create
         customer = Customer.create!(customer_params)
         if customer.valid?
             session[:customer_id] = customer.id
-            render json: customer, status: :created
+            render json: customer,  status: :created
         else
             render json: {errors: customer.errors.full_messages}, status: :unprocessable_entity
         end
     end
 
+   
     # def show
     #     render json: @current_customer
     # end
@@ -25,7 +30,8 @@ class CustomersController < ApplicationController
     # def show
     #     customer = Customer.find_by!(id: params[:id])
     #     render json: customer, status: :ok
-    # end 
+    # end
+
 
 
 
