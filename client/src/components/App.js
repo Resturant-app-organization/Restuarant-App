@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Menu from "./Menu";
-import About from "./About";
-import Contacts from "./Contacts";
 import Login from "./Login";
 import FoodList from "./FoodList";
 import BurgerDetails from "./BurgerDetails";
@@ -37,11 +34,7 @@ function onDetailsClick(clickedBurger){
         <Route exact path="/" element={<FoodList onDetailsClick = {onDetailsClick}  />}
         ></Route>
         <Route exact path="/login" element={<Login/>}></Route>
-          <Route exact path="/menu" element={<Menu />}></Route>
           <Route exact path="/burgers/:burgerId" element={<BurgerDetails />}></Route>
-          <Route exact path="/about" element={<About />}></Route>
-          <Route exact path="/contacts" element={<Contacts />}></Route>
-          {/* <Route exact path="/logout" element={<Logout />}></Route> */}
           <Route exact path="/burgers/:burgerId" element={<BurgerDetails />}
           ></Route>
            <Route  exact  path="/review"  element={<Review reviewList={reviews} setReviewList={setReviewList} />}
