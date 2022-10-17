@@ -21,6 +21,20 @@ class CustomersController < ApplicationController
     end
 
    
+    # def show
+    #     render json: @current_customer
+    # end
+
+
+
+    # def show
+    #     customer = Customer.find_by!(id: params[:id])
+    #     render json: customer, status: :ok
+    # end
+
+
+
+
     def show
         user = Customer.find_by(id: session[:customer_id])
         if customer
